@@ -18,14 +18,20 @@ namespace Journal.Input {
                 target = hit.transform.gameObject.GetComponent<Interactable>();
                 target.focus.Invoke();
                 timer -= Time.deltaTime;
-                if(timer < 0) {
+                if(target == null) {
+                    timer = global.gazeTimeout;
+                }
+                else if(timer < 0) {
                     target.action.Invoke();
                 }
             }
             else if(target != null) {
                 target.defocus.Invoke();
                 target = null;
-                timer = global.gazeTimeout;
+                timer -= Time.deltaTime;
+                if(timer < 0) {
+                    global.duckManager.EndInteraction();
+                }
             }
         }
     }
