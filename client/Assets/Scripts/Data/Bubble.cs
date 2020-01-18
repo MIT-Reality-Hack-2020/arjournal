@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Bubble : MonoBehaviour
-{
-    public string text;
-    public int timestamp;
-    public Image image;
-    public AudioClip audioclip;
+namespace Journal.Data {
+    public class Bubble : MonoBehaviour
+    {
+        public string text;
+        public string timestamp;
+        public int smiley;
+        public Texture image;
+        public AudioClip audioclip;
+    }
 }

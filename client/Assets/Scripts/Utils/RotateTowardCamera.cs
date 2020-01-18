@@ -6,6 +6,9 @@ namespace Journal.Utils {
     public class RotateTowardCamera : MonoBehaviour {
         public Global global;
         public bool active = true;
+        void Start() {
+            global = FindObjectOfType<Global>();
+        }
         void Update()
         {
             if(active) {

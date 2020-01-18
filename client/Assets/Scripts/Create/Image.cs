@@ -10,9 +10,10 @@ namespace Journal.Create {
         private float timer, timeTillShot = 5.0f;
         private bool shooting = false;
 
+        public GameObject bubble;
+
         void Start()
         {
-            
         }
 
         void Update()
@@ -42,6 +43,12 @@ namespace Journal.Create {
             cameraFrame.SetActive(false);
             progressbarBack.SetActive(false);
             progressbar.SetActive(false);
+
+            GameObject newBubble = Instantiate(bubble);
+            newBubble.SetActive(true);
+            newBubble.transform.position = cameraFrame.transform.position;
+            newBubble.GetComponentInChildren<NRKernal.NRExamples.PhotoCapture>().TakeAPhoto();
+
         }
     }
 }
