@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Journal.Duck {
     public class Manager : MonoBehaviour {
-        public CanvasGroup baseCanvas, inputCanvas, journalCanvas;
+        public GameObject baseCanvas, createCanvas, journalCanvas;
         public bool interactedWith = false;
         public Animator anim;
 
@@ -22,7 +22,7 @@ namespace Journal.Duck {
         }
 
         void Start() {
-            
+            HideTooltip();
         }
 
         void Update() {
@@ -30,23 +30,29 @@ namespace Journal.Duck {
         }
 
         public void DisplayTooltip() {
-            baseCanvas.alpha = 1.0f;
+            baseCanvas.SetActive(true);
         }
 
         public void GetCreate() {
-            baseCanvas.alpha = 0.0f;
-            inputCanvas.alpha = 1.0f;
+           baseCanvas.SetActive(false);
+           createCanvas.SetActive(true);
         }
 
         public void GetJournal() {
-            baseCanvas.alpha = 0.0f;
-            journalCanvas.alpha = 1.0f;
+            baseCanvas.SetActive(false);
+            journalCanvas.SetActive(true);
         }
 
         public void HideTooltip() {
-            baseCanvas.alpha = 0.0f;
-            inputCanvas.alpha = 0.0f;
-            journalCanvas.alpha = 0.0f;
+            baseCanvas.SetActive(false);
+            createCanvas.SetActive(false);
+            journalCanvas.SetActive(false);
+        }
+
+        private void ToggleColliders(GameObject parent, bool on) {
+            foreach(BoxCollider box in parent.GetComponentsInChildren<BoxCollider>()) {
+                box.enabled = on;
+            }
         }
     }
 }

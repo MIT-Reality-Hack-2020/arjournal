@@ -4,10 +4,13 @@ using UnityEngine;
 
 namespace Journal.Utils {
     public class RotateTowardCamera : MonoBehaviour {
-    public Global global;
-    void Update()
-    {
-        transform.LookAt(global.cameraRig.transform);
-    }
+        public Global global;
+        public bool active = true;
+        void Update()
+        {
+            if(active) {
+                transform.LookAt(global.cameraRig.transform);
+            }
+        }
     }
 }

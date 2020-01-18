@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Journal.Data {
     public class Manager : MonoBehaviour {
+        List<Bubble> bubbles = new List<Bubble>();
         void Start() {
             
         }
@@ -11,5 +12,11 @@ namespace Journal.Data {
         void Update() {
             
         }
+
+        public void InsertBubble(Bubble bubble) {
+            bubbles.Add(bubble);
+        }
+
+        //public void Add
     }
 }

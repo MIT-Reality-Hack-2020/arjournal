@@ -6,6 +6,6 @@ namespace Journal {
     public class Global : MonoBehaviour {
         public GameObject cameraRig;
         public Duck.Manager duckManager;
-        public float gazeTimeout = 3.0f;
+        public float gazeTimeout = 2.0f;
     }
 }
