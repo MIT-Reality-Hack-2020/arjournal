@@ -37,6 +37,7 @@ namespace Journal.Input {
                     }
                 }
                 else {
+                    justTriggered = false;
                     if(target) {
                         Debug.Log("Defocused on " + target.gameObject.ToString());
                         target.defocus.Invoke();
