@@ -12,6 +12,9 @@ namespace NRKernal.NRExamples
         Resolution cameraResolution;
 
         public NRPreviewer Previewer;
+        [HideInInspector]
+        public GameObject newQuad;
+        public Journal.Create.Image imageManager;
 
         private void Start()
         {
@@ -20,20 +23,20 @@ namespace NRKernal.NRExamples
 
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.T) || NRInput.GetButtonDown(ControllerButton.TRIGGER))
-            {
-                TakeAPhoto();
-            }
+            // if (Input.GetKeyDown(KeyCode.T) || NRInput.GetButtonDown(ControllerButton.TRIGGER))
+            // {
+            //     TakeAPhoto();
+            // }
 
-            if (Input.GetKeyDown(KeyCode.Q) || NRInput.GetButtonDown(ControllerButton.HOME))
-            {
-                Close();
-            }
+            // if (Input.GetKeyDown(KeyCode.Q) || NRInput.GetButtonDown(ControllerButton.HOME))
+            // {
+            //     Close();
+            // }
 
-            if (Input.GetKeyDown(KeyCode.O) || NRInput.GetButtonDown(ControllerButton.APP))
-            {
-                Create();
-            }
+            // if (Input.GetKeyDown(KeyCode.O) || NRInput.GetButtonDown(ControllerButton.APP))
+            // {
+            //     Create();
+            // }
 
             if (photoCaptureObject != null)
             {
@@ -80,7 +83,7 @@ namespace NRKernal.NRExamples
             });
         }
 
-        void TakeAPhoto()
+        public void TakeAPhoto()
         {
             if (photoCaptureObject == null)
             {
@@ -107,6 +110,9 @@ namespace NRKernal.NRExamples
             quad.transform.forward = headTran.forward;
             quad.transform.localScale = new Vector3(1.6f, 0.9f, 0);
             quadRenderer.material.SetTexture("_MainTex", targetTexture);
+
+            newQuad = quad;
+            imageManager.SetPhotoTransform();
         }
 
         void Close()

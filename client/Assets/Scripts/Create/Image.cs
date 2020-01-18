@@ -9,11 +9,13 @@ namespace Journal.Create {
         public GameObject cameraFrame, progressbarBack, progressbar;
         private float timer, timeTillShot = 5.0f;
         private bool shooting = false;
-
+        private GameObject lastBubble;
         public GameObject bubble;
+        private Global global;
 
         void Start()
         {
+            global = FindObjectOfType<Global>();
         }
 
         void Update()
@@ -25,6 +27,12 @@ namespace Journal.Create {
                 Vector3 barPos = progressbar.transform.localPosition;
                 progressbar.transform.localScale = barScale;
 
+                if(timer > timeTillShot - 0.3f) {
+                    cameraFrame.SetActive(false);
+                    progressbarBack.SetActive(false);
+                    progressbar.SetActive(false);
+                    global.duckMesh.enabled = false;
+                }
                 if(timer > timeTillShot) {
                     ShootPicture();
                 }
@@ -40,15 +48,20 @@ namespace Journal.Create {
 
         public void ShootPicture() {
             shooting = false;
-            cameraFrame.SetActive(false);
-            progressbarBack.SetActive(false);
-            progressbar.SetActive(false);
 
             GameObject newBubble = Instantiate(bubble);
-            newBubble.SetActive(true);
+            lastBubble = newBubble;
             newBubble.transform.position = cameraFrame.transform.position;
-            newBubble.GetComponentInChildren<NRKernal.NRExamples.PhotoCapture>().TakeAPhoto();
+            GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().TakeAPhoto();
+            newBubble.SetActive(true);
+            global.duckMesh.enabled = true;
+        }
 
+        public void SetPhotoTransform() {
+            GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().newQuad.transform.SetParent(lastBubble.transform.GetComponentInChildren<Bubble.ImageView>().gameObject.transform);
+            GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().newQuad.transform.localPosition = new Vector3(0, 2.0f, 0.1f);
+            GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().newQuad.transform.rotation = Quaternion.Euler(0, 180.0f, 0);
+            GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().newQuad.transform.localScale = new Vector3(8.667639f, 4.875546f, 0f);
         }
     }
 }

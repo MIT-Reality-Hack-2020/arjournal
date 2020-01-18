@@ -35,21 +35,21 @@ namespace NRKernal.Record
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) || NRInput.GetButtonDown(ControllerButton.APP))
-            {
-                Root.SetActive(!Root.activeInHierarchy);
+            // if (Input.GetKeyDown(KeyCode.Space) || NRInput.GetButtonDown(ControllerButton.APP))
+            // {
+            //     Root.SetActive(!Root.activeInHierarchy);
 
-                NRInput.LaserVisualActive = !Root.activeInHierarchy;
-                NRInput.ReticleVisualActive = !Root.activeInHierarchy;
-            }
-            this.BindPreviewTOController();
+            //     NRInput.LaserVisualActive = !Root.activeInHierarchy;
+            //     NRInput.ReticleVisualActive = !Root.activeInHierarchy;
+            // }
+            // this.BindPreviewTOController();
         }
 
-        private void BindPreviewTOController()
-        {
-            var inputAnchor = NRInput.AnchorsHelper.GetAnchor(ControllerAnchorEnum.RightModelAnchor);
-            transform.position = inputAnchor.TransformPoint(Vector3.forward * 0.3f);
-            transform.forward = inputAnchor.forward;
-        }
+        // private void BindPreviewTOController()
+        // {
+        //     var inputAnchor = NRInput.AnchorsHelper.GetAnchor(ControllerAnchorEnum.RightModelAnchor);
+        //     transform.position = inputAnchor.TransformPoint(Vector3.forward * 0.3f);
+        //     transform.forward = inputAnchor.forward;
+        // }
     }
 }

@@ -11,6 +11,7 @@ namespace Journal.Bubble {
         void Start()
         {
             imageView = gameObject.GetComponentInChildren<ImageView>();
+            mesh = GetComponent<MeshRenderer>();
             imageView.gameObject.SetActive(false);
         }
 

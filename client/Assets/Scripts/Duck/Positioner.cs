@@ -17,10 +17,10 @@ namespace Journal.Duck {
 
             float dist = Vector3.Distance(duckPosition2D, cameraPosition2D);
 
-            if(dist > 1.2f) {
+            if(dist > 1.8f) {
                 transform.parent.position = Vector3.MoveTowards(transform.parent.position, cameraPosition2D, 0.02f);
             }
-            else if(dist < 0.8f) {
+            else if(dist < 1.2f) {
                 transform.parent.position = Vector3.MoveTowards(transform.parent.position, cameraPosition2D, -0.02f);
             }
 
