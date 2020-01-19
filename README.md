@@ -12,5 +12,3 @@ In the future, we hope to integrate the functionality of the mobile version with
 
 Come join us and start journaling!
 
-![Screenshots from Mobile App](https://ibb.co/K0PkFmj)
-
