@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="intuit" size="10.000000 5.623529" />
+    <ImageTarget name="iks" size="10.000000 4.888691" />
+    <ImageTarget name="video-bg" size="10.000000 6.621359" />
+    <ImageTarget name="video" size="10.000000 6.624390" />
+  </Tracking>
+</QCARConfig>
