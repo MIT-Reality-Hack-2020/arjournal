@@ -15,8 +15,6 @@ public class location : MonoBehaviour
     private float currentLongitude;
     private float currentLatitude;
 
-    private GameObject angel;
-    private GameObject cylinder;
     private double distance;
 
     private bool setOriginalValues = true;
@@ -32,7 +30,6 @@ public class location : MonoBehaviour
 
     IEnumerator getLocation()
     {
-        Debug.Log("I'm in");
         // First, check if user has location service enabled
         if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
@@ -56,7 +53,6 @@ public class location : MonoBehaviour
 
         // Start service before querying location
         Input.location.Start();
-        Debug.Log("I'm alive");
 
         // Wait until service initializes
         int maxWait = 20;
@@ -90,13 +86,6 @@ public class location : MonoBehaviour
 
     private void Start()
     {
-        angel = GameObject.FindGameObjectsWithTag("angel")[0];
-        cylinder = GameObject.FindGameObjectsWithTag("cylinder")[0];
-        print("1");
-        objects[0] = angel;
-        print("2");
-        objects[1] = cylinder;
-        print("3");
         StartCoroutine(getLocation());
     }
 
@@ -106,7 +95,7 @@ public class location : MonoBehaviour
         int j = 0;
         for (int i = 0; i < pairs.Length; i++)
         {
-            print("Coods: " + currentLatitude + " " + currentLongitude + " " + pairs[i].Item1 + " " + pairs[i].Item2);
+            print("Location: " + currentLatitude + " " + currentLongitude + " " + pairs[i].Item1 + " " + pairs[i].Item2);
             //fetchForCurrentLocation(currentLatitude, currentLongitude);
             double dist = Calc(currentLatitude, currentLongitude, pairs[i].Item1, pairs[i].Item2);
             if (dist < min)

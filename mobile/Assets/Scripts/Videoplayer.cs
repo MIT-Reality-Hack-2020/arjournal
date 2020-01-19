@@ -5,16 +5,16 @@ using UnityEngine.Video;
 
 public class Videoplayer : MonoBehaviour
 {
-    public GameObject videoplayer, play, pause;
-
+    public GameObject videoplayer, play;
+    bool video_toggle;
     // Start is called before the first frame update
     void Start()
     {
         play.SetActive(true);
-        pause.SetActive(false);
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        video_toggle = true;
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -39,21 +39,18 @@ public class Videoplayer : MonoBehaviour
             {
                 Debug.Log("Mouse clicked");
                 //case 1
-                if (hit.collider.tag == "play")
+                if (hit.collider.tag == "video-player")
                 {
                     Debug.Log("Mouse clicked play");
-                    videoplayer.GetComponent<VideoPlayer>().Play();
-                    play.SetActive(false);
-                    pause.SetActive(true);
-                }
-
-                //case 2
-                if (hit.collider.tag == "pause")
-                {
-                    Debug.Log("Mouse clicked pause");
-                    videoplayer.GetComponent<VideoPlayer>().Pause();
-                    pause.SetActive(false);
-                    play.SetActive(true);
+                    if (video_toggle)
+                    {
+                        videoplayer.GetComponent<VideoPlayer>().Play();
+                    }
+                    else
+                    {
+                        videoplayer.GetComponent<VideoPlayer>().Pause();
+                    }
+                    video_toggle = !video_toggle;
                 }
             }
         }
