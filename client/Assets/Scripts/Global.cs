@@ -7,6 +7,6 @@ namespace Journal {
         public GameObject cameraRig;
         public Duck.Manager duckManager;
         public MeshRenderer duckMesh;
-        public float gazeTimeout = 2.0f;
+        public float gazeTimeout = 1.3f;
     }
 }
