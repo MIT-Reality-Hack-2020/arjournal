@@ -11,6 +11,29 @@ namespace Journal.Bubble {
         public RawImage imageRend;
         public Sprite blue, green, yellow, pink;
         public TextMeshProUGUI text;
+        private Global global;
+
+        void Awake() {
+            global = FindObjectOfType<Global>();
+            
+        }
+
+        public void SetEmotion() {
+            switch(global.duckManager.emotion) {
+                case "blue":
+                    smileyRend.sprite = blue;
+                    break;
+                case "green":
+                    smileyRend.sprite = green;
+                    break;
+                case "yellow":
+                    smileyRend.sprite = yellow;
+                    break;
+                default:
+                    smileyRend.sprite = pink;
+                    break;
+            }
+        }
 
         public void SetImage(Texture texture) {
             imageRend.texture = texture;

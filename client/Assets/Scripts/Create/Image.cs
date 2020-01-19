@@ -56,6 +56,8 @@ namespace Journal.Create {
             GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().TakeAPhoto();
             newBubble.SetActive(true);
             global.duckMesh.enabled = true;
+            newBubble.GetComponentInChildren<Bubble.ImageView>().SetEmotion();
+            
         }
 
         public void SetPhotoTransform() {
