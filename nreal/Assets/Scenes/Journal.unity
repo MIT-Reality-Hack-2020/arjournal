@@ -1203,7 +1203,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3, y: 1.5, z: 0.01}
-  m_Center: {x: 0, y: 0.2, z: 0.05}
+  m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!1 &365106013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,10 +1491,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 382945894}
-    characterCount: 16
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 5
+    spaceCount: 2
+    wordCount: 6
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -1811,10 +1811,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 423246966}
-    characterCount: 16
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 5
+    spaceCount: 2
+    wordCount: 6
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -2863,8 +2863,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 0.01}
-  m_Center: {x: 0, y: 0.2, z: 0.05}
+  m_Size: {x: 1.5, y: 2, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!1001 &999491075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3532,8 +3532,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 0.01}
-  m_Center: {x: 0, y: 0.2, z: 0.05}
+  m_Size: {x: 1.5, y: 2, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!1 &1112656114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,10 +6262,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1665979413}
-    characterCount: 16
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 5
+    spaceCount: 2
+    wordCount: 6
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -6681,8 +6681,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0.05}
+  m_Size: {x: 1.5, y: 1.5, z: 0.01}
+  m_Center: {x: 0, y: -0.25, z: 0.05}
 --- !u!114 &1790278258
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -58,7 +58,7 @@ namespace Journal.Input {
                     justDefocused = true;
                     Debug.Log("Defocused on " + target.gameObject.ToString());
                     target.defocus.Invoke();
-                    timer = global.gazeTimeout;
+                    timer = 0;
                 }
                 else {
                     timer -= Time.deltaTime;
