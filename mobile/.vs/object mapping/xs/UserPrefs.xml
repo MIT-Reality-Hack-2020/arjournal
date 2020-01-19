@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{14A20DD6-948D-811D-903F-8004D8AE763D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextInput.cs">
+    <Files>
+      <File FileName="Assets/audioplayer.cs" Line="18" Column="67" />
+      <File FileName="Assets/Videoplayer.cs" Line="32" Column="18" />
+      <File FileName="Assets/transcript.cs" Line="59" Column="6" />
+      <File FileName="Assets/Scripts/Content.cs" Line="38" Column="17" />
+      <File FileName="Assets/Scripts/Data.json" Line="11" Column="24" />
+      <File FileName="Assets/Scripts/location.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/ButtonScript.cs" Line="19" Column="9" />
+      <File FileName="Assets/Scripts/TextInput.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="object mapping" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="TextInput.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="068d562b-1579-41f8-b67e-60da2ebd83da" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,42 @@
+﻿[
+    {
+        "Lat": 42.1,
+        "Lon": 76.1,
+        "Texts": [ "Hi", "Hello", "No" ],
+        "PictureLinks": [
+            "https://www.inquirer.com/resizer/ZwGpSBfS9CJYW38ZHXoOCMHMxuw=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/FX3JJ75GWNFL5CWJU2KQEE7GT4.jpg",
+            "",
+            ""
+        ],
+        "AudioLinks": [
+            "",
+            "",
+            ""
+        ],
+        "Transcript Texts": [
+            "Transcript1",
+            "Trnascript2",
+            "Transcript3"
+        ]
+    },
+    {
+        "Lat": 42.1,
+        "Lon": 76.2,
+        "Texts": [ "Hi", "Hello", "No" ],
+        "PictureLinks": [
+            "https://www.inquirer.com/resizer/ZwGpSBfS9CJYW38ZHXoOCMHMxuw=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/FX3JJ75GWNFL5CWJU2KQEE7GT4.jpg",
+            "",
+            ""
+        ],
+        "AudioLinks": [
+            "",
+            "",
+            ""
+        ],
+        "Transcript Texts": [
+            "Transcript1",
+            "Trnascript2",
+            "Transcript3"
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - distanceText
+  - angel
+  - Markerless
+  - Marker
+  - cylinder
+  - Red
+  - Green
+  - Blue
+  - pause
+  - play
+  - textInput
+  - newTextPanel
+  - addedText
+  - add
+  - submit
+  - inputField
+  - transcriptPanel
+  - typingText
+  - close
+  - showTranscript
+  - button_duck
+  - button_create
+  - button_audio
+  - button_smiley
+  - button_undo
+  - button_send
+  - button_journal
+  - button_map
+  - button_return
+  - button_text
+  - button_photo
+  - button_video
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

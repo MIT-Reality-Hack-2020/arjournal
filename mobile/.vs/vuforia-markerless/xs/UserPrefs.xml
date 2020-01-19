@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{696A93E5-3F5E-F4D9-D22F-D11BB0665E9E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/location.cs">
+    <Files>
+      <File FileName="Assets/location.cs" Line="106" Column="99" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="vuforia-markerless" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="location.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="975e4fa8-c080-4635-aa69-2a0e854ec152" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
