@@ -22,7 +22,7 @@ namespace NRKernal.NRExamples
         {
             if (photoCaptureObject != null)
             {
-                view.SetImage(photoCaptureObject.CaptureBehaviour.PreviewTexture);
+                view.SetImage((Texture2D)photoCaptureObject.CaptureBehaviour.PreviewTexture);
             }
         }
 

@@ -109,7 +109,7 @@ namespace NRKernal.NRExamples
             quad.transform.localPosition = headTran.position + headTran.forward * 3f;
             quad.transform.forward = headTran.forward;
             quad.transform.localScale = new Vector3(1.6f, 0.9f, 0);
-            quadRenderer.material.SetTexture("_MainTex", targetTexture);
+            quadRenderer.material.SetTexture("_MainTex", Instantiate(targetTexture));
 
             newQuad = quad;
             imageManager.SetPhotoTransform();
