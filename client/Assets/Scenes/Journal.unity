@@ -293,20 +293,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &108914428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108914426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be38844111f523b45a87d7648ed95fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  global: {fileID: 1224270517}
-  manager: {fileID: 1362031302}
 --- !u!1 &160038356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2397,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1362031301}
+    m_TransformParent: {fileID: 1246087924}
     m_Modifications:
     - target: {fileID: 100000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_Name
@@ -2423,11 +2409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35739106
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0000002948421
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2463,15 +2449,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.12
+      value: 0.120000005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.12
+      value: 0.120000005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.12
+      value: 0.120000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5aee99938d61d64f80619ef6a356058, type: 3}
@@ -3778,6 +3764,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   global: {fileID: 1224270517}
   active: 1
+--- !u!1 &1246087923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246087924}
+  - component: {fileID: 1246087925}
+  - component: {fileID: 1246087926}
+  m_Layer: 0
+  m_Name: DuckPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246087924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246087923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.357391, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 999491076}
+  m_Father: {fileID: 1362031301}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246087925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246087923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c7d06348549d54c89ae24138b4f5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  global: {fileID: 1224270517}
+  active: 1
+--- !u!114 &1246087926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246087923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be38844111f523b45a87d7648ed95fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  global: {fileID: 1224270517}
+  manager: {fileID: 1362031302}
 --- !u!1 &1258138562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,7 +4191,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.65, z: 0.8}
+  m_Size: {x: 0.65, y: 0.65, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1362031301
 Transform:
@@ -4157,7 +4204,7 @@ Transform:
   m_LocalPosition: {x: -0.754, y: -0.494, z: 0.5}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
-  - {fileID: 999491076}
+  - {fileID: 1246087924}
   - {fileID: 1245474541}
   m_Father: {fileID: 0}
   m_RootOrder: 1
