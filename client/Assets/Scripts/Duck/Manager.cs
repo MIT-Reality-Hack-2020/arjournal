@@ -9,11 +9,13 @@ namespace Journal.Duck {
         public bool interactedWith = false;
         public Animator anim;
         public string emotion = "green";
+        public AudioSource quackSource;
 
         public void BeginInteraction() {
             interactedWith = true;
             anim.StopPlayback();
             DisplayTooltip();
+            quackSource.Play();
         }
 
         public void EndInteraction() {
