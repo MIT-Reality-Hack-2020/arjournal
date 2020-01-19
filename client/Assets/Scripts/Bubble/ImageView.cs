@@ -19,6 +19,7 @@ namespace Journal.Bubble {
         }
 
         public void SetEmotion() {
+            text.text = System.DateTime.Now.ToString("MM/dd/yyyy") + "\n" + System.DateTime.Now.ToString("h:mm tt");
             switch(global.duckManager.emotion) {
                 case "blue":
                     smileyRend.sprite = blue;

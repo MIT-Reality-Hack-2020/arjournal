@@ -17,10 +17,11 @@ namespace Journal.Bubble {
 
         public void SetVoice(AudioClip clip) {
             source.clip = clip;
-            text.text = System.DateTime.Now.ToString("MM/dd/yyyy") + "\n" + System.DateTime.Now.ToString("h:mm tt");
+            
         }
 
         public void SetClip(AudioClip clip) {
+            text.text = System.DateTime.Now.ToString("MM/dd/yyyy") + "\n" + System.DateTime.Now.ToString("h:mm tt");
             source.clip = clip;
 
             switch(global.duckManager.emotion) {
