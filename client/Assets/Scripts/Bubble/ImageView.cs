@@ -12,7 +12,6 @@ namespace Journal.Bubble {
         public Sprite blue, green, yellow, pink;
         public TextMeshProUGUI text;
 
-
         public void SetImage(Texture texture) {
             imageRend.texture = texture;
             text.text = System.DateTime.Now.ToString("MM/dd/yyyy") + "\n" + System.DateTime.Now.ToString("h:mm tt");

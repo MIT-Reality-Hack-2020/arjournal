@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 20d080720974eb04ab921a2f447e740a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Button
+    100002: Button1
+    100004: Button10
+    100006: Button11
+    100008: Button12
+    100010: Button13
+    100012: Button2
+    100014: Button3
+    100016: Button4
+    100018: Button5
+    100020: Button6
+    100022: Button7
+    100024: Button8
+    100026: Button9
+    100028: Camera
+    100030: //RootNode
+    100032: Glass
+    400000: Button
+    400002: Button1
+    400004: Button10
+    400006: Button11
+    400008: Button12
+    400010: Button13
+    400012: Button2
+    400014: Button3
+    400016: Button4
+    400018: Button5
+    400020: Button6
+    400022: Button7
+    400024: Button8
+    400026: Button9
+    400028: Camera
+    400030: //RootNode
+    400032: Glass
+    2100000: ButtonMat
+    2100002: Button1Mat
+    2100004: Button10Mat
+    2100006: Button11Mat
+    2100008: Button12Mat
+    2100010: Button13Mat
+    2100012: Button2Mat
+    2100014: Button3Mat
+    2100016: Button4Mat
+    2100018: Button5Mat
+    2100020: Button6Mat
+    2100022: Button7Mat
+    2100024: Button8Mat
+    2100026: Button9Mat
+    2100028: CameraMat
+    2100030: GlassMat
+    2300000: Button
+    2300002: Button1
+    2300004: Button10
+    2300006: Button11
+    2300008: Button12
+    2300010: Button13
+    2300012: Button2
+    2300014: Button3
+    2300016: Button4
+    2300018: Button5
+    2300020: Button6
+    2300022: Button7
+    2300024: Button8
+    2300026: Button9
+    2300028: Camera
+    2300030: Glass
+    3300000: Button
+    3300002: Button1
+    3300004: Button10
+    3300006: Button11
+    3300008: Button12
+    3300010: Button13
+    3300012: Button2
+    3300014: Button3
+    3300016: Button4
+    3300018: Button5
+    3300020: Button6
+    3300022: Button7
+    3300024: Button8
+    3300026: Button9
+    3300028: Camera
+    3300030: Glass
+    4300000: Button
+    4300002: Button1
+    4300004: Button10
+    4300006: Button11
+    4300008: Button12
+    4300010: Button13
+    4300012: Button2
+    4300014: Button3
+    4300016: Button4
+    4300018: Button5
+    4300020: Button6
+    4300022: Button7
+    4300024: Button8
+    4300026: Button9
+    4300028: Camera
+    4300030: Glass
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

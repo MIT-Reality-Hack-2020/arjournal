@@ -50,6 +50,7 @@ namespace Journal.Create {
             shooting = false;
 
             GameObject newBubble = Instantiate(bubble);
+            newBubble.GetComponentInChildren<Bubble.Manager>().type = Bubble.Manager.bubbleType.image;
             lastBubble = newBubble;
             newBubble.transform.position = cameraFrame.transform.position;
             GetComponentInChildren<NRKernal.NRExamples.PhotoCaptureExample>().TakeAPhoto();
