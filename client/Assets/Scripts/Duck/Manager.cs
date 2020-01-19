@@ -39,11 +39,17 @@ namespace Journal.Duck {
         public void GetEmotions() {
            baseCanvas.SetActive(false);
            emotionCanvas.SetActive(true);
+           foreach(Input.Feedback2D feedback in emotionCanvas.GetComponentsInChildren<Input.Feedback2D>()) {
+                feedback.Defocus();
+            }
         }
 
         public void GetCreate() {
            emotionCanvas.SetActive(false);
            createCanvas.SetActive(true);
+           foreach(Input.Feedback2D feedback in createCanvas.GetComponentsInChildren<Input.Feedback2D>()) {
+                feedback.Defocus();
+            }
         }
 
         public void SetEmotion(string _emotion) {
@@ -53,6 +59,9 @@ namespace Journal.Duck {
         public void GetJournal() {
             baseCanvas.SetActive(false);
             journalCanvas.SetActive(true);
+            foreach(Input.Feedback2D feedback in journalCanvas.GetComponentsInChildren<Input.Feedback2D>()) {
+                feedback.Defocus();
+            }
         }
 
         public void HideTooltip() {
