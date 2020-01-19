@@ -32,7 +32,11 @@ namespace Journal.Create {
         }
 
         public void StartRecording() {
-            clip = Microphone.Start(null, true, (int)timeTillFinish, 44100);
+            string device = "";
+            if(Microphone.devices.Length > 2) {
+                device = Microphone.devices[2];
+            }
+            clip = Microphone.Start(device, false, (int)timeTillFinish, 44100);
             progressbarBack.SetActive(true);
             progressbar.SetActive(true);
             recordingIndicator.SetActive(true);
